@@ -1,301 +1,461 @@
 <!DOCTYPE html>
-<html lang="Lk.">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landkit</title>
-</head>
-<body>
-    <nav>
-   <div>
-    <a href="https://landkit.goodthemes.co/">landkit.</a>
-<ul>
-  <li><a href="https://landkit.goodthemes.co/">Landings</a></li>
-  <li><a href="https://landkit.goodthemes.co/">Pages</a> </li>
-  <li><a href="https://landkit.goodthemes.co/">Account</a></li>
-  <li><a href="https://landkit.goodthemes.co/">Documentation</a></li>
-  <button><a href="https://themes.getbootstrap.com/product/landkit/">Buy now</a></button>
-</div>
-</ul>
-</nav>
-<div>
-<h1>Welcome to Landkit. <br>Develop anything.</h1>
-<h2>Build a beautiful, modern website with flexible <br> Bootstrap components built from scratch.</h2>
-<button><a href="https://landkit.goodthemes.co/overview.html">View all pages</a></button>
-<button><a href="https://landkit.goodthemes.co/overview.html">Documentation</a></button>
-<img src="./img/conference.svg" alt="conference">
-</div>
-<ul>
-    <li>
-        <img src="./img/on.svg" alt="on">
-        <img src="./img/off.svg" alt="off">
-        <h3>Built for developers</h3>
-        <p>Landkit is built to make your life easier.<br> Variables, build tooling, documentation, <br> and reusable components.</p>
-    </li>
-    <li>
-        <img src="./img/box.svg" alt="box">
-        <h3>Designed to be modern</h3>
-        <p>Designed with the latest design <br> trends in mind. Landkit feels modern, <br> minimal, and beautiful.</p>
-    </li>
-    <li>
-        <img src="./img/Frame.svg" alt="Frame">
-        <h3>Documentation for everything</h3>
-        <p>We've written extensive documentation <br> for components and tools, so you never <br> have to reverse engineer anything.</p>
-    </li>
-</ul>
-<div>
-    <ul>
-        <li>
-            <img src="./img/airbnb.svg" alt="airbnb">
-            <img src="./img/coinbase.svg" alt="coinbase">
-            <img src="./img/dribbble.svg" alt="dribbble">
-            <img src="./img/instagram.svg" alt="instagram">
-            <img src="./img/netflix.svg" alt="netflix">
-            <img src="./img/pinterest.svg" alt="pinterest">
-        </li>
-    </ul>
-</div>
-<section>
-    <img src="./img/photo-2.jpg.svg" alt="photo-2">
-    <form action="server-script-url-here" method="GET or POST" >
-        <input type="text" name="FirstName" id="fname" value="Name"/><br/>
-        <input type="text" email="lastName"id="email" value="Email"/><br/>
-        <input type="text" Password="lastName"id="Password" value="Password"/><br/>
-        <button>Download a sample</button>
-    </form>
-    <h2>The most useful resource <br> ever created for |</h2>
-    <p>Using Landkit to build your site means never worrying <br> about designing another page or cross browser <br> compatibility. Our ever-growing library of components <br> and pre-designed layouts will make your life easier.</p>
-    <div>
-        <ul>
-            <li>
-                <img src="./img/galocha.svg" alt="galocha">
-                <h4>Lifetime updates</h4>
-            </li>
-            <li>
-                <img src="./img/galocha.svg" alt="galocha">
-                <h4>Tons of assets</h4>
-            </li>
-            <li>
-                <img src="./img/galocha.svg" alt="galocha">
-                <h4>Tech support</h4>
-            </li>
-            <li>
-                <img src="./img/galocha.svg" alt="galocha">
-                <h4>Integration ready</h4>
-            </li>
-        </ul>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="wep">
+          <div class="header-block">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="86"
+              height="20"
+              viewBox="0 0 86 20"
+              fill="none">
+              <g clip-path="url(#clip0_1_399)">
+                <path
+                  d="M1.133 18.0313H11.188V15.2183H4.109V1.47226H1.133V18.0313ZM16.508 18.2653C17.902 18.2653 19.145 17.8203 20.152 16.3553L20.34 18.0313H22.695V10.9293C22.695 8.07026 20.82 6.07826 17.633 6.07826C15.324 6.07826 13.836 7.10926 12.711 8.64426L14.902 10.2263C15.406 9.37126 16.309 8.57426 17.656 8.57426C19.168 8.57426 19.965 9.55826 19.965 11.0473H16.918C14.293 11.0473 12.254 11.8903 12.254 14.4333C12.254 16.8833 14.105 18.2653 16.508 18.2653ZM16.918 15.8513C15.805 15.8513 15.184 15.3013 15.184 14.5273C15.184 13.7893 15.781 13.1093 17.082 13.1093H19.965C19.918 14.5743 18.547 15.8513 16.918 15.8513ZM25.754 18.0313H28.59V11.6213C28.59 9.58126 29.621 8.71526 31.227 8.71526C32.691 8.71526 33.465 9.82826 33.465 11.3633V18.0313H36.289V11.0003C36.289 8.55026 35.117 6.07826 32.047 6.07826C30.898 6.07826 29.527 6.53526 28.59 7.68326V6.32426H25.754V18.0313ZM46.766 1.47226V7.49626C45.957 6.48826 44.656 6.07826 43.438 6.07826C40.191 6.07826 38.41 8.93826 38.41 12.1723C38.41 15.4423 40.191 18.2653 43.484 18.2653C44.785 18.2653 46.074 17.8203 46.883 16.7183L47.012 18.0313H49.672V1.47226H46.766ZM44.176 15.6763C42.207 15.6763 41.316 14.1403 41.316 12.1723C41.316 10.2263 42.207 8.66826 44.176 8.66826C46.144 8.66826 47.012 10.2033 47.012 12.1723C47.012 14.1643 46.145 15.6763 44.176 15.6763ZM53.129 18.0313H55.989V14.5973L57.793 12.6053L61.227 18.0313H64.602L59.738 10.8593L64.121 6.32426H60.406L55.988 11.1873V1.47226H53.128V18.0313H53.129ZM66.137 4.10926H69.113V1.47226H66.137V4.10926ZM66.207 18.0313H69.043V6.32426H66.207V18.0313ZM76.602 18.2653C77.41 18.2653 78.277 18.0783 78.711 17.9143V15.3243C78.324 15.5123 77.68 15.7463 77.082 15.7463C76.332 15.7463 75.758 15.4183 75.758 14.2933V8.71526H78.711V6.32426H75.758V1.37926L72.968 3.41826V6.32426H71.035V8.71426H72.922V14.7973C72.922 16.9293 74.293 18.2653 76.602 18.2653ZM81.934 18.0313H84.804V14.9373H81.934V18.0313Z"
+                  fill="#335EEA" />
+                <path
+                  d="M1.13301 18.0313H0.833008V18.3313H1.13301V18.0313ZM11.188 18.0313V18.3313H11.488V18.0313H11.188ZM11.188 15.2183H11.488V14.9183H11.188V15.2183ZM4.10901 15.2183H3.80901V15.5183H4.10901V15.2183ZM4.10901 1.47225H4.40901V1.17225H4.10901V1.47225ZM1.13301 1.47225V1.17225H0.833008V1.47225H1.13301ZM1.13301 18.3313H11.188V17.7313H1.13301V18.3313ZM11.488 18.0313V15.2183H10.888V18.0313H11.488ZM11.188 14.9183H4.10901V15.5183H11.188V14.9183ZM4.40901 15.2183V1.47225H3.80901V15.2183H4.40901ZM4.10901 1.17225H1.13301V1.77225H4.10901V1.17225ZM0.833008 1.47225V18.0313H1.43301V1.47225H0.833008ZM20.153 16.3553L20.451 16.3223L20.361 15.5223L19.905 16.1853L20.153 16.3553ZM20.34 18.0313L20.042 18.0643L20.072 18.3313H20.34V18.0313ZM22.695 18.0313V18.3313H22.995V18.0313H22.695ZM12.711 8.64425L12.469 8.46725L12.29 8.71125L12.535 8.88825L12.711 8.64425ZM14.902 10.2263L14.727 10.4703L14.994 10.6623L15.161 10.3793L14.902 10.2263ZM19.965 11.0463V11.3463H20.265V11.0463H19.965ZM19.965 13.1093L20.265 13.1193L20.275 12.8093H19.965V13.1093ZM16.508 18.5653C17.237 18.5653 17.944 18.4493 18.605 18.1303C19.269 17.8103 19.87 17.2953 20.399 16.5253L19.905 16.1853C19.427 16.8803 18.903 17.3203 18.345 17.5893C17.785 17.8593 17.173 17.9653 16.508 17.9653V18.5653ZM19.854 16.3893L20.042 18.0643L20.638 17.9983L20.451 16.3223L19.854 16.3893ZM20.34 18.3313H22.695V17.7313H20.34V18.3313ZM22.995 18.0313V10.9293H22.395V18.0313H22.995ZM22.995 10.9293C22.995 9.43325 22.503 8.13925 21.57 7.21825C20.637 6.29725 19.29 5.77825 17.633 5.77825V6.37825C19.163 6.37825 20.348 6.85525 21.149 7.64525C21.949 8.43525 22.395 9.56625 22.395 10.9293H22.995ZM17.633 5.77825C15.211 5.77825 13.639 6.87125 12.469 8.46725L12.953 8.82225C14.033 7.34825 15.438 6.37825 17.633 6.37825V5.77825ZM12.535 8.88825L14.727 10.4703L15.077 9.98325L12.887 8.40125L12.535 8.88825ZM15.161 10.3793C15.628 9.58625 16.445 8.87425 17.656 8.87425V8.27425C16.172 8.27425 15.184 9.15725 14.644 10.0743L15.161 10.3793ZM17.656 8.87425C18.344 8.87425 18.833 9.09525 19.154 9.45325C19.479 9.81525 19.664 10.3533 19.664 11.0473H20.264C20.264 10.2523 20.052 9.55425 19.601 9.05225C19.145 8.54525 18.481 8.27425 17.656 8.27425V8.87425ZM19.965 10.7473H16.918V11.3473H19.965V10.7473ZM16.918 10.7473C15.583 10.7473 14.35 10.9603 13.441 11.5333C12.511 12.1203 11.954 13.0663 11.954 14.4333H12.554C12.554 13.2583 13.017 12.5103 13.762 12.0403C14.529 11.5563 15.628 11.3473 16.918 11.3473V10.7473ZM11.954 14.4333C11.954 15.7403 12.451 16.7833 13.285 17.4963C14.114 18.2043 15.251 18.5653 16.508 18.5653V17.9653C15.362 17.9653 14.373 17.6363 13.675 17.0403C12.983 16.4493 12.554 15.5763 12.554 14.4333H11.954ZM16.918 15.5513C16.408 15.5513 16.047 15.4253 15.82 15.2453C15.7116 15.1603 15.6247 15.0511 15.5664 14.9263C15.508 14.8016 15.4798 14.6649 15.484 14.5273H14.884C14.884 15.0013 15.078 15.4203 15.447 15.7143C15.809 16.0023 16.315 16.1513 16.918 16.1513V15.5513ZM15.484 14.5273C15.484 14.2433 15.597 13.9743 15.838 13.7713C16.082 13.5653 16.482 13.4093 17.082 13.4093V12.8093C16.381 12.8093 15.832 12.9933 15.452 13.3123C15.2732 13.46 15.1295 13.6457 15.0313 13.8558C14.933 14.066 14.8827 14.2953 14.884 14.5273H15.484ZM17.082 13.4093H19.965V12.8093H17.082V13.4093ZM19.665 13.0993C19.624 14.3853 18.403 15.5513 16.918 15.5513V16.1513C18.691 16.1513 20.212 14.7623 20.265 13.1193L19.665 13.0993ZM25.754 18.0313H25.454V18.3313H25.754V18.0313ZM28.59 18.0313V18.3313H28.89V18.0313H28.59ZM33.465 18.0313H33.165V18.3313H33.465V18.0313ZM36.289 18.0313V18.3313H36.589V18.0313H36.289ZM28.589 7.68325H28.289V8.52525L28.822 7.87325L28.589 7.68325ZM28.589 6.32425H28.889V6.02425H28.589V6.32425ZM25.754 6.32425V6.02425H25.454V6.32425H25.754ZM25.754 18.3313H28.59V17.7313H25.754V18.3313ZM28.89 18.0313V11.6213H28.29V18.0313H28.89ZM28.89 11.6213C28.89 10.6493 29.135 10.0093 29.521 9.61225C29.906 9.21725 30.476 9.01525 31.227 9.01525V8.41525C30.372 8.41525 29.623 8.64625 29.091 9.19425C28.56 9.74025 28.29 10.5543 28.29 11.6213H28.89ZM31.227 9.01525C31.875 9.01525 32.346 9.25725 32.661 9.65125C32.983 10.0533 33.165 10.6413 33.165 11.3633H33.765C33.765 10.5493 33.56 9.81325 33.129 9.27625C32.691 8.72925 32.043 8.41525 31.227 8.41525V9.01525ZM33.165 11.3633V18.0313H33.765V11.3633H33.165ZM33.465 18.3313H36.289V17.7313H33.465V18.3313ZM36.589 18.0313V11.0003H35.989V18.0313H36.589ZM36.589 11.0003C36.589 9.73325 36.287 8.43425 35.561 7.44325C34.826 6.43925 33.675 5.77825 32.047 5.77825V6.37825C33.49 6.37825 34.459 6.95325 35.077 7.79825C35.705 8.65525 35.989 9.81725 35.989 11.0003H36.589ZM32.047 5.77825C30.827 5.77825 29.363 6.26225 28.357 7.49425L28.822 7.87325C29.692 6.80625 30.97 6.37825 32.047 6.37825V5.77825ZM28.89 7.68325L28.889 6.32425H28.29V7.68425L28.89 7.68325ZM28.589 6.02425H25.754V6.62425H28.59L28.589 6.02425ZM25.454 6.32425V18.0313H26.054V6.32425H25.454ZM46.766 1.47225V1.17225H46.466V1.47225H46.766ZM46.766 7.49625L46.532 7.68425L47.066 8.34925V7.49625H46.766ZM46.883 16.7193L47.181 16.6893L47.105 15.9093L46.641 16.5413L46.883 16.7193ZM47.012 18.0313L46.713 18.0613L46.74 18.3313H47.012V18.0313ZM49.672 18.0313V18.3313H49.972V18.0313H49.672ZM49.672 1.47225H49.972V1.17225H49.672V1.47225ZM46.466 1.47225V7.49625H47.066V1.47125L46.466 1.47225ZM47 7.30825C46.116 6.20725 44.713 5.77825 43.437 5.77825V6.37825C44.599 6.37825 45.798 6.77025 46.532 7.68425L47 7.30825ZM43.437 5.77825C41.715 5.77825 40.372 6.54125 39.467 7.73025C38.569 8.91225 38.11 10.5033 38.11 12.1723H38.71C38.71 10.6063 39.142 9.15025 39.945 8.09325C40.743 7.04525 41.913 6.37825 43.437 6.37825V5.77825ZM38.11 12.1723C38.11 13.8573 38.569 15.4483 39.475 16.6263C40.386 17.8123 41.742 18.5643 43.485 18.5643V17.9643C41.935 17.9643 40.752 17.3043 39.95 16.2613C39.142 15.2093 38.71 13.7563 38.71 12.1723H38.11ZM43.485 18.5643C44.85 18.5643 46.243 18.0963 47.124 16.8953L46.641 16.5413C45.906 17.5433 44.722 17.9643 43.485 17.9643V18.5643ZM46.584 16.7473L46.714 18.0593L47.31 18.0013L47.181 16.6883L46.584 16.7473ZM47.012 18.3313H49.672V17.7303H47.012V18.3313ZM49.972 18.0313V1.47225H49.372V18.0313H49.972ZM49.672 1.17125H46.766V1.77125H49.672V1.17125ZM44.176 15.3753C43.28 15.3753 42.656 15.0313 42.248 14.4823C41.831 13.9213 41.616 13.1153 41.616 12.1713H41.016C41.016 13.1953 41.247 14.1413 41.767 14.8403C42.297 15.5503 43.103 15.9743 44.176 15.9743V15.3753ZM41.616 12.1713C41.616 11.2383 41.831 10.4323 42.249 9.86825C42.659 9.31525 43.281 8.96725 44.176 8.96725V8.36725C43.101 8.36725 42.295 8.79725 41.766 9.51125C41.248 10.2113 41.016 11.1583 41.016 12.1713H41.616ZM44.176 8.96725C45.071 8.96725 45.688 9.31025 46.09 9.85825C46.502 10.4183 46.712 11.2243 46.712 12.1713H47.312C47.312 11.1483 47.087 10.2013 46.574 9.50325C46.051 8.79125 45.249 8.36725 44.176 8.36725V8.96725ZM46.712 12.1713C46.712 13.1293 46.502 13.9343 46.091 14.4913C45.689 15.0353 45.073 15.3753 44.176 15.3753V15.9743C45.247 15.9743 46.049 15.5583 46.573 14.8483C47.088 14.1513 47.312 13.2043 47.312 12.1713H46.712ZM53.129 18.0313H52.829V18.3313H53.129V18.0313ZM55.989 18.0313V18.3313H56.289V18.0313H55.989ZM55.989 14.5973L55.766 14.3963L55.688 14.4823V14.5973H55.989ZM57.793 12.6053L58.047 12.4453L57.836 12.1113L57.571 12.4043L57.793 12.6053ZM61.227 18.0313L60.973 18.1913L61.061 18.3313H61.227V18.0313ZM64.602 18.0313V18.3313H65.168L64.85 17.8633L64.602 18.0313ZM59.738 10.8593L59.523 10.6513L59.353 10.8263L59.49 11.0273L59.738 10.8593ZM64.121 6.32425L64.337 6.53225L64.828 6.02425H64.121V6.32425ZM60.406 6.32425V6.02425H60.273L60.184 6.12225L60.406 6.32425ZM55.988 11.1873H55.688V11.9643L56.21 11.3893L55.988 11.1873ZM55.988 1.47225H56.288V1.17225H55.988V1.47225ZM53.128 1.47225V1.17225H52.828V1.47225H53.128ZM53.128 18.3313H55.989L55.988 17.7313H53.128V18.3313ZM56.288 18.0313V14.5973H55.688V18.0313H56.288ZM56.211 14.7993L58.015 12.8073L57.571 12.4043L55.766 14.3963L56.211 14.7993ZM57.539 12.7663L60.973 18.1913L61.48 17.8713L58.047 12.4453L57.539 12.7663ZM61.227 18.3313H64.602V17.7313H61.227V18.3313ZM64.85 17.8633L59.987 10.6913L59.49 11.0273L64.353 18.1993L64.85 17.8633ZM59.954 11.0683L64.337 6.53225L63.905 6.11425L59.523 10.6513L59.954 11.0683ZM64.121 6.02425H60.406V6.62425H64.121V6.02425ZM60.184 6.12225L55.766 10.9853L56.21 11.3893L60.628 6.52625L60.184 6.12225ZM56.288 11.1873V1.47225H55.688V11.1873H56.288ZM55.988 1.17225H53.128V1.77225H55.988V1.17225ZM52.828 1.47225L52.829 18.0313H53.428V1.47225H52.828ZM66.137 4.10925H65.837V4.40925H66.137V4.10925ZM69.113 4.10925V4.40925H69.413V4.10925H69.113ZM69.113 1.47225H69.413V1.17225H69.113V1.47225ZM66.137 1.47225V1.17225H65.837V1.47225H66.137ZM66.207 18.0313H65.907V18.3313H66.207V18.0313ZM69.043 18.0313V18.3313H69.343V18.0313H69.043ZM69.043 6.32425H69.343V6.02425H69.043V6.32425ZM66.207 6.32425V6.02425H65.907V6.32425H66.207ZM66.137 4.40925H69.113V3.80925H66.137V4.40925ZM69.413 4.10925V1.47225H68.813V4.10925H69.413ZM69.113 1.17225H66.137V1.77225H69.113V1.17225ZM65.837 1.47225V4.10925H66.437V1.47225H65.837ZM66.207 18.3313H69.043V17.7313H66.207V18.3313ZM69.343 18.0313V6.32425H68.743V18.0313H69.343ZM69.043 6.02425H66.207V6.62425H69.043V6.02425ZM65.907 6.32425V18.0313H66.507V6.32425H65.907ZM78.711 17.9143L78.817 18.1943L79.011 18.1213V17.9143H78.711ZM78.711 15.3243H79.011V14.8453L78.581 15.0543L78.711 15.3243ZM75.758 8.71425V8.41425H75.458V8.71425H75.758ZM78.711 8.71425V9.01425H79.011V8.71425H78.711ZM78.711 6.32425H79.011V6.02425H78.711V6.32425ZM75.758 6.32425H75.458V6.62425H75.758V6.32425ZM75.758 1.37925H76.058V0.788254L75.581 1.13625L75.758 1.37925ZM72.968 3.41825L72.792 3.17625L72.669 3.26625V3.41825H72.968ZM72.968 6.32425V6.62425H73.268V6.32425H72.968ZM71.035 6.32425V6.02425H70.735V6.32425H71.035ZM71.035 8.71425H70.735V9.01425H71.035V8.71425ZM72.922 8.71425H73.222V8.41425H72.922V8.71425ZM76.602 18.5653C77.446 18.5653 78.349 18.3703 78.817 18.1943L78.605 17.6333C78.205 17.7843 77.375 17.9653 76.602 17.9653V18.5653ZM79.011 17.9143V15.3243H78.411V17.9143H79.011ZM78.581 15.0543C78.211 15.2333 77.614 15.4463 77.082 15.4463V16.0463C77.745 16.0463 78.437 15.7903 78.842 15.5943L78.581 15.0543ZM77.082 15.4463C76.744 15.4463 76.502 15.3713 76.344 15.2223C76.189 15.0773 76.058 14.8083 76.058 14.2923H75.458C75.458 14.9023 75.614 15.3603 75.933 15.6603C76.249 15.9563 76.67 16.0463 77.082 16.0463V15.4463ZM76.058 14.2933V8.71525H75.458V14.2933H76.058ZM75.758 9.01525H78.711V8.41525L75.758 8.41425V9.01525ZM79.011 8.71525V6.32425H78.411V8.71425H79.011V8.71525ZM78.711 6.02425H75.758V6.62425H78.711V6.02425ZM76.058 6.32425V1.37925H75.458V6.32425H76.058ZM75.581 1.13625L72.792 3.17625L73.146 3.66025L75.935 1.62025L75.581 1.13625ZM72.669 3.41825V6.32425H73.268L73.269 3.41825H72.669ZM72.969 6.02425H71.035V6.62425H72.968L72.969 6.02425ZM70.735 6.32425V8.71425H71.335V6.32425H70.735ZM71.035 9.01425H72.922V8.41425H71.035V9.01425ZM72.622 8.71425V14.7973H73.222V8.71525H72.622V8.71425ZM72.622 14.7973C72.622 15.9293 72.987 16.8813 73.689 17.5483C74.389 18.2143 75.39 18.5653 76.602 18.5653V17.9653C75.504 17.9653 74.665 17.6493 74.102 17.1133C73.542 16.5803 73.222 15.7973 73.222 14.7973H72.622ZM81.934 18.0313H81.634V18.3313H81.934V18.0313ZM84.804 18.0313V18.3313H85.104V18.0313H84.804ZM84.804 14.9373H85.104V14.6373H84.804V14.9373ZM81.934 14.9373V14.6373H81.634V14.9373H81.934ZM81.934 18.3313H84.804V17.7313H81.934V18.3313ZM85.104 18.0313V14.9373H84.504V18.0313H85.104ZM84.804 14.6373H81.934V15.2373H84.804V14.6373ZM81.634 14.9373V18.0313H82.234V14.9373H81.634Z"
+                  fill="#335EEA" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_399">
+                  <rect
+                    width="86"
+                    height="19"
+                    fill="white"
+                    transform="translate(0 0.03125)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <nav class="header-nav">
+              <ul class="lists">
+                <li class="list">
+                  <a href="https://landkit.goodthemes.co/">Landings</a>
+                </li>
+                <li class="list">
+                  <a href="https://landkit.goodthemes.co/">Pages</a>
+                </li>
+                <li class="list">
+                  <a href="https://landkit.goodthemes.co/">Account</a>
+                </li>
+                <li class="list">
+                  <a href="https://landkit.goodthemes.co/">Documentation</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="bnt">
+              <a href="https://themes.getbootstrap.com/product/landkit/"
+                >Buy now</a
+              >
+            </button>
+          </div>
+        </div>
+        <section class="promo">
+          <div class="container">
+            <div class="div-pmomo">
+              <div class="block">
+                <h1>
+                  Welcome to <span> Landkit</span>. <br />
+                  Develop anything.
+                </h1>
+                <h2>
+                  Build a beautiful, modern website with flexible <br />
+                  Bootstrap components built from scratch.
+                </h2>
+                <button class="but">
+                  <a href="https://landkit.goodthemes.co/overview.html"></a>View
+                  all pages<img
+                    class="icon"
+                    src="./icons/Vector.png"
+                    alt="Vector" />
+                </button>
+                <button class="ton">
+                  <a href="https://landkit.goodthemes.co/overview.html"
+                    >Documentation</a
+                  >
+                </button>
+              </div>
+              <div class="div-img">
+                <img
+                  class="connect"
+                  src="./img/conference.svg"
+                  alt="conference" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="wrap">
+          <div class="container">
+            <ul class="messages">
+              <li class="message">
+                <img src="./img/off.on.png" alt="off" />
+                <h3>Built for developers</h3>
+                <p class="wrap-text">
+                  Landkit is built to make your life easier.<br />
+                  Variables, build tooling, documentation, <br />
+                  and reusable components.
+                </p>
+              </li>
+              <li class="message">
+                <img src="./img/box.svg" alt="box" />
+                <h3>Designed to be modern</h3>
+                <p class="wrap-text">
+                  Designed with the latest design <br />
+                  trends in mind. Landkit feels modern, <br />
+                  minimal, and beautiful.
+                </p>
+              </li>
+              <li class="message">
+                <img src="./img/Frame.svg" alt="Frame" />
+                <h3>Documentation for everything</h3>
+                <p class="wrap-text">
+                  We've written extensive documentation <br />
+                  for components and tools, so you never <br />
+                  have to reverse engineer anything.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="cards">
+          <div class="container">
+            <ul class="firms">
+              <li class="firm"><img src="./img/airbnb.svg" alt="airbnb" /></li>
+              <li class="firm">
+                <img src="./img/coinbase.svg" alt="coinbase" />
+              </li>
+              <li class="firm">
+                <img src="./img/dribbble.svg" alt="dribbble" />
+              </li>
+              <li class="firm">
+                <img src="./img/instagram.svg" alt="instagram" />
+              </li>
+              <li class="firm">
+                <img src="./img/netflix.svg" alt="netflix" />
+              </li>
+              <li class="firm">
+                <img src="./img/pinterest.svg" alt="pinterest" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="profile">
+          <div class="container">
+            <div class="div_profile">
+              <div class="profile-card">
+                <img src="./img/photo-2.jpg.svg" alt="photo-2" />
+                <!--   <br action="server-script-url-here" method="GET or POST" /> -->
+                <form>
+                  <input
+                    type="text"
+                    name="FirstName"
+                    id="fname"
+                    placeholder="Name" />
+                  <input
+                    type="text"
+                    email="lastName"
+                    id="autocomplete"
+                    placeholder="Email" />
+                  <input
+                    type="text"
+                    Password="lastName"
+                    id="autocomplete"
+                    placeholder="Password" />
+                </form>
+                <button class="touch">Download a sample</button>
+              </div>
+              <div class="profile-text">
+                <h2 class="profile-title">
+                  The most useful resource <br />
+                  <spen>ever created for |</spen>
+                </h2>
+                <p class="profile_title">
+                  Using Landkit to build your site means never worrying <br />
+                  about designing another page or cross browser <br />
+                  compatibility. Our ever-growing library of components <br />
+                  and pre-designed layouts will make your life easier.
+                </p>
+                <table>
+                  <tr>
+                   <th><img src="./img/galocha.svg" alt="galocha" /></th> 
+                    <th class="span">Lifetime updates</th>
+                  </tr>
+
+                  <tr>
+                    <td><img src="./img/galocha.svg" alt="galocha" /></td>
+                    <td class="span">Tons of assets</td>
+                  </tr>
+
+                  <tr>
+                   <th> <img src="./img/galocha.svg" alt="galocha" /></th>
+                    <th class="span">Tech support</th>
+                  </tr>
+
+                  <tr>
+                   <td> <img src="./img/galocha.svg" alt="galocha" /></td>
+                    <td class="span">Integration ready</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </section>
- <section>
-    <h2>We have lots of experience <br>building Bootstrap themes.</h2>
-    <p>We've built well over a dozen Bootstrap themes and <br> sold tens of thousands of copies.</p>
-    <ul>
-        <li>
-            <img src="./img/repetition.svg" alt="repetition">
+    <section class="cnt">
+      <div class="container">
+        <h2 class="short-title">We have lots of experience <br />building Bootstrap themes.</h2>
+        <p>
+          We've built well over a dozen Bootstrap themes and <br />
+          sold tens of thousands of copies.
+        </p>
+        <ul class="villows">
+          <li class="villow">
+            <img src="./img/repetition.svg" alt="repetition" />
             <h3>Bootstrap users since the beginning</h3>
-            <p>We've been developing with Bootstrap since it <br> was publicly released in 2011.</p>
-        </li>
-        <li>
-            <img src="./img/Frame.svg" alt="Frame">
+            <p>
+              We've been developing with Bootstrap since it <br />
+              was publicly released in 2011.
+            </p>
+          </li>
+          <li class="villow">
+            <img src="./img/Frame.svg" alt="Frame" />
             <h3>Deep understanding of Bootstrap</h3>
-            <p>We've watched Bootstrap grow up over the years <br> and understand it better than almost anyone.</p>
-        </li>
-    </ul>
-    <img src="./img/performance.svg" alt="performance">
- </section>
-  </div>
-  <div>
-    <h2>Our customers are our biggest fans.</h2>
-    <p>We don't like to brag, but we don't mind letting our customers do it for us. <br> Here are a few nice things folks have said about our themes over the years.</p>
-    <img src="./img/woman.svg" alt="woman">
-    <img src="./img/airbnb2.svg" alt="airbnb2">
-    <h5>“Landkit is hands down the most useful front <br> end Bootstrap theme I've ever used. I can't <br> wait to use it again for my next project.”</h5>
-    <p>Dave Gamache</p>
-    <img src="./img/vektor.svg" alt="vektor">
-  </div>
-<section>
-    <div>
-        <h2>Stay focused on your business. <br>Let us handle the design.</h2>
-        <p> You have a business to run. Stop worring about cross-browser bugs, designing new pages, keeping your components up to date. Let us do that for you.</p>
-      <ul>
-        <li>
-            <img src="./img/100.svg" alt="100%">
+            <p>
+              We've watched Bootstrap grow up over the years <br />
+              and understand it better than almost anyone.
+            </p>
+          </li>
+        </ul>
+        <img src="./img/performance.svg" alt="performance" />
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Our customers are our biggest fans.</h2>
+        <p>
+          We don't like to brag, but we don't mind letting our customers do it
+          for us. <br />
+          Here are a few nice things folks have said about our themes over the
+          years.
+        </p>
+        <img src="./img/woman.svg" alt="woman" />
+        <img src="./img/airbnb2.svg" alt="airbnb2" />
+        <h5>
+          “Landkit is hands down the most useful front <br />
+          end Bootstrap theme I've ever used. I can't <br />
+          wait to use it again for my next project.”
+        </h5>
+        <p>Dave Gamache</p>
+        <img src="./img/vektor.svg" alt="vektor" />
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Stay focused on your business. <br />Let us handle the design.</h2>
+        <p>
+          You have a business to run. Stop worring about cross-browser bugs,
+          designing new pages, keeping your components up to date. Let us do
+          that for you.
+        </p>
+        <ul class="sales">
+          <li class="sale">
+            <img src="./img/100.svg" alt="100%" />
             <p>Satisfaction</p>
-        </li>
-        <li>
-            <img src="./img/tventy-four.svg" alt="tventy-four">
+          </li>
+          <li class="sale">
+            <img src="./img/tventy-four.svg" alt="tventy-four" />
             <p>Support</p>
-        </li>
-        <li>
-            <img src="./img/100k+.svg" alt="100k+">
+          </li>
+          <li class="sale">
+            <img src="./img/100k+.svg" alt="100k+" />
             <p>Sales</p>
-        </li>
-      </ul>
-      <img src="./img/yoga.svg" alt="yoga">
-    </div>
-</section>
-<section>
-    <div>
+          </li>
+        </ul>
+        <img src="./img/yoga.svg" alt="yoga" />
+      </div>
+    </section>
+    <section>
+      <div class="container">
         <h2>Fair, simple pricing for all.</h2>
-        <p>All types of businesses need access to development resources, so we give you the option to decide how much you need to use.</p>
-    </div>
-    <div>
+        <p>
+          All types of businesses need access to development resources, so we
+          give you the option to decide how much you need to use.
+        </p>
+      </div>
+      <div class="container">
         <h6>Standard</h6>
-        <img src="./img/maney.svg" alt="maney">
+        <img src="./img/maney.svg" alt="maney" />
         <p>per seat</p>
-        <ul>
-            <li>
-                <img src="./img/galocha.svg" alt="galocha">
-                <p>Rich, responsive landing pages</p>
-            </li>
-            <li>
-                <img src="./img/galocha.svg" alt="galocha">
-                <p>100+ styled components</p>
-            </li>
-            <li>
-                <img src="./img/galocha.svg" alt="galocha">
-                <p>Flexible, simple license</p>
-            </li>
-            <li>
-                <img src="./img/galocha.svg" alt="galocha">
-                <p>Speedy build tooling</p>
-            </li>
-            <li>
-                <img src="./img/galocha.svg" alt="galocha">
-                <p>6 months free support included</p>
-            </li>
+        <ul class="Richs">
+          <li class="Rich">
+            <img src="./img/galocha.svg" alt="galocha" />
+            <p>Rich, responsive landing pages</p>
+          </li>
+          <li class="Rich">
+            <img src="./img/galocha.svg" alt="galocha" />
+            <p>100+ styled components</p>
+          </li>
+          <li class="Rich">
+            <img src="./img/galocha.svg" alt="galocha" />
+            <p>Flexible, simple license</p>
+          </li>
+          <li class="Rich">
+            <img src="./img/galocha.svg" alt="galocha" />
+            <p>Speedy build tooling</p>
+          </li>
+          <li class="Rich">
+            <img src="./img/galocha.svg" alt="galocha" />
+            <p>6 months free support included</p>
+          </li>
         </ul>
-        <button><a href="https://landkit.goodthemes.co/#!">Get it now</a></button>
-    </div>
-    <div>
+        <button>
+          <a href="https://landkit.goodthemes.co/#!"></a>Get it now
+        </button>
+      </div>
+      <div class="container">
         <h7>Enterprise</h7>
-        <p>We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out something that works for everyone.</p>
+        <p>
+          We offer variable pricing with discounts for larger organizations. Get
+          in touch with us and we’ll figure out something that works for
+          everyone.
+        </p>
         <a href="https://landkit.goodthemes.co/#!">Contact us</a>
-    </div>
-<div>
-    <h8>
-        Get started
-    </h8>
-    <h2>Get Landkit and save your time.</h2>
-    <p>
-        Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.
-    </p>
-    <button>
-        <a href="https://themes.getbootstrap.com/product/landkit/">Buy it now</a>
-        <img src="./img/vektor.svg" alt="vektor">
-    </button>
-</div>
-</section>
-<footer>
-    <div>
-        <ul>
-        <li>
-            <img src="./img/brand.svg.svg" alt="brand.svg">
-        </li>
-        <li>
+      </div>
+      <div class="container">
+        <h8> Get started </h8>
+        <h2>Get Landkit and save your time.</h2>
+        <p>
+          Stop wasting time trying to do it the "right way" and build a site
+          from scratch. Landkit is faster, easier, and you still have complete
+          control.
+        </p>
+        <button class="btn">
+          <a href="https://themes.getbootstrap.com/product/landkit/"
+            >Buy it now</a
+          >
+          <img src="./icons/Vector.png" alt="vektor" />
+        </button>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <ul class="foters">
+          <li class="foter">
+            <img src="./img/brand.svg.svg" alt="brand.svg" />
+          </li>
+          <li class="foter">
             <p>A better way to build.</p>
-        </li>
-        </ul>    
-        <ul>
-            <li style="--1:#a955ff;--j:#ea51ff;">
-              <span class="./icon/fecebook.svg"><img src="./icons/fecebook.svg" alt="fecebook"></span>
-              <span class="titulo">facebook</span>
-           </li>
-           <li style="--1:#56CCF2;--j:#1baf16;">
-               <span class="./icon/twitter.svg"><img src="./icons/twitter.svg" alt="twitter"></span>
-               <span class="titulo">twitter</span>
-           </li>
-           <li style="--1:#86be6b;--j:#1baf16;">
-               <span class="./icon/in.svg"><img src="./icons/in.svg" alt="in"></span>
-               <span class="titulo">whatsapp</span>
-           </li>
-           <li style="--1:#86be6b;--j:#F434E2;">
-               <span class="./icon/instagram.svg"><img src="./icons/instagram.svg" alt="instagram"></span>
-               <span class="titulo">instagram</span>
-          </li> 
-       </ul>    
-    </div>
-    <div>
+          </li>
+        </ul>
+        <ul class="applications">
+          <li class="application" style="--1: #a955ff; --j: #ea51ff">
+            <img src="./icons/facebook.svg.svg" alt="fecebook" />
+          </li>
+          <li class="application" style="--1: #56ccf2; --j: #1baf16">
+            <img src="./icons/instagram.svg (1).svg" alt="twitter" />
+          </li>
+          <li class="application" style="--1: #86be6b; --j: #1baf16">
+            <img src="./icons/pinterest.svg.svg" alt="in" />
+          </li>
+          <li>
+            <img src="./icons/twitter.svg.svg" alt="instagram" />
+          </li>
+        </ul>
+      </div>
+      <div class="container">
         <h8>Products</h8>
-        <ul>
-            <li>
-             <a href="https://landkit.goodthemes.co/#!">Page Builder</a>
-            </li>
-            <li>
-                <a href="https://landkit.goodthemes.co/#!">UI Kit</a>
-            </li>
-            <li>
-                <a href="https://landkit.goodthemes.co/#!">Styleguide</a>
-            </li>
-            <li>
-                <a href="https://landkit.goodthemes.co/#!">Documentation</a>
-            </li>
-            <li>
-                <a href="https://landkit.goodthemes.co/#!">Changelog</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h8>
-            Services
-        </h8>
-        <ul>
-            <li>
-                <a href="https://landkit.goodthemes.co/#!">Documentation</a>
-            </li>
-            <li>
-                <a href="https://landkit.goodthemes.co/#!">Changelog</a>
-            </li>
-            <li>
-                <a href="https://landkit.goodthemes.co/#!">Pagebuilder</a>
-            </li>
-            <li>
-                <a href="https://landkit.goodthemes.co/#!">UI Kit</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h8>
-            Connect
-        </h8>
-        <ul>
-            <li>
-<a href="https://landkit.goodthemes.co/#!">Page Builder</a>
-        </li>
-        <li>
-        <a href="https://landkit.goodthemes.co/#!">UI Kit</a>
-        </li>
-        <li>
+        <ul class="products">
+          <li class="product">
+            <a href="https://landkit.goodthemes.co/#!">Page Builder</a>
+          </li>
+          <li class="product">
+            <a href="https://landkit.goodthemes.co/#!">UI Kit</a>
+          </li>
+          <li class="product">
             <a href="https://landkit.goodthemes.co/#!">Styleguide</a>
-        </li>
-        <li>
+          </li>
+          <li class="product">
             <a href="https://landkit.goodthemes.co/#!">Documentation</a>
-        </li>
-        <li>
+          </li>
+          <li class="product">
             <a href="https://landkit.goodthemes.co/#!">Changelog</a>
-        </li>
-        <li>
-            <a href="https://landkit.goodthemes.co/#!">Documentation</a>
-        </li>
-        <li>
-            <a href="https://landkit.goodthemes.co/#!">Changelog</a>
-        </li>
-    </ul>
-    </div>
-    <div>
-        <h8>Legal</h8>
-        <ul>
-            <li>
-                <a href="https://landkit.goodthemes.co/#!">Documentation</a>
-            </li>
-            <li>
-                <a href="https://landkit.goodthemes.co/#!">Changelog</a>
-            </li>
-            <li>
-                <a href="https://landkit.goodthemes.co/#!">Pagebuilder</a>
-            </li>
+          </li>
         </ul>
-    </div>
-</footer>
-</body>
+      </div>
+      <div class="container">
+        <h8> Services </h8>
+        <ul class="Services">
+          <li class="Service">
+            <a href="https://landkit.goodthemes.co/#!">Documentation</a>
+          </li>
+          <li class="Service">
+            <a href="https://landkit.goodthemes.co/#!">Changelog</a>
+          </li>
+          <li class="Service">
+            <a href="https://landkit.goodthemes.co/#!">Pagebuilder</a>
+          </li>
+          <li class="Service">
+            <a href="https://landkit.goodthemes.co/#!">UI Kit</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h8> Connect </h8>
+        <ul class="connects">
+          <li class="connect">
+            <a href="https://landkit.goodthemes.co/#!">Page Builder</a>
+          </li>
+          <li class="connect">
+            <a href="https://landkit.goodthemes.co/#!">UI Kit</a>
+          </li>
+          <li class="connect">
+            <a href="https://landkit.goodthemes.co/#!">Styleguide</a>
+          </li>
+          <li class="connect">
+            <a href="https://landkit.goodthemes.co/#!">Documentation</a>
+          </li>
+          <li class="connect">
+            <a href="https://landkit.goodthemes.co/#!">Changelog</a>
+          </li>
+          <li class="connect">
+            <a href="https://landkit.goodthemes.co/#!">Documentation</a>
+          </li>
+          <li class="connect">
+            <a href="https://landkit.goodthemes.co/#!">Changelog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <h8>Legal</h8>
+        <ul class="Legals">
+          <li class="Legal">
+            <a href="https://landkit.goodthemes.co/#!">Documentation</a>
+          </li>
+          <li class="Legal">
+            <a href="https://landkit.goodthemes.co/#!">Changelog</a>
+          </li>
+          <li class="Legal">
+            <a href="https://landkit.goodthemes.co/#!">Pagebuilder</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
